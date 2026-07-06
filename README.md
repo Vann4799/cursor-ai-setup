@@ -100,13 +100,27 @@ The following changes were made:
 
 ## Screenshots
 
-The screenshots document the final working environment after setup and troubleshooting:
+The screenshots document the final working environment after setup and troubleshooting.
 
-- `screenshots/01-cursor-project-open.png` - Cursor IDE with the repository open.
-- `screenshots/02-claude-code-response.png` - Claude Code connected and responding to a test prompt.
-- `screenshots/03-codex-sidebar-working.png` - Codex sidebar open and responding to a test prompt.
-- `screenshots/04-source-control-changes.png` - Source control view showing README changes before commit.
-- `screenshots/05-readme-in-cursor.png` - README opened and edited inside Cursor.
+### Cursor IDE with Repository Open
+
+![Cursor IDE with repository open](screenshots/01-cursor-project-open.png)
+
+### Claude Code Responding
+
+![Claude Code connected and responding to a test prompt](screenshots/02-claude-code-response.png)
+
+### Codex Sidebar Working
+
+![Codex sidebar open and responding to a test prompt](screenshots/03-codex-sidebar-working.png)
+
+### Source Control Changes
+
+![Source control view showing README changes before commit](screenshots/04-source-control-changes.png)
+
+### README Edited in Cursor
+
+![README opened and edited inside Cursor](screenshots/05-readme-in-cursor.png)
 
 Screenshots that only show the earlier API credit limitation are not part of the final setup documentation.
 
