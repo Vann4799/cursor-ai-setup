@@ -56,9 +56,9 @@ Committed the README and pushed it to the `main` branch on GitHub.
 
 ![Cursor IDE with repository open and extensions visible in sidebar](screenshots/01-cursor-ide.png)
 
-### Claude Code — Installed & Ready
+### Claude Code — Installed, But Blocked by API Credits
 
-![Claude Code extension active and ready to use](screenshots/02-claude-code.png)
+![Claude Code test showing "Credit balance is too low" — extension installed and authenticated, but requests require paid API credits](screenshots/02-claude-code.png)
 
 ### Codex — Custom Gateway Configuration
 
@@ -74,12 +74,13 @@ Committed the README and pushed it to the `main` branch on GitHub.
 
 ### Claude Code — API Credits
 
-Although authentication was successful, Claude Code could not execute requests because the Anthropic API account had no available API credits.
+Although authentication was successful, Claude Code could not execute requests because the Anthropic API account had no available API credits. A test request returned **"Credit balance is too low"** (see screenshot above).
 
 **Resolution:**
 
 - Verified that authentication completed successfully.
 - Confirmed the limitation was caused by API billing rather than installation or configuration.
+- Documented the error with a screenshot as proof of testing.
 
 ### Codex — Custom Configuration
 
