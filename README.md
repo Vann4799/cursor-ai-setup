@@ -16,104 +16,97 @@ This repository documents the setup process completed for the 100Hires portfolio
 
 ---
 
-## Setup Summary
+## Steps Completed
 
-### Cursor IDE
+### 1. Installed Cursor IDE
 
-Cursor IDE was installed and used as the main development environment for this setup.
+Cursor IDE was installed and used as the main development environment.
 
-The repository was opened in Cursor, and the README documentation was created and updated from inside the editor.
+The repository was opened in Cursor so the setup could be documented and verified directly from the editor.
 
-### Claude Code
+### 2. Installed Claude Code
 
-Claude Code was installed successfully from the official Anthropic extension.
+Claude Code was installed from the official Anthropic extension.
 
-Initial authentication using the default Anthropic API completed successfully. However, requests could not be executed because the Anthropic Console account had no available API credits.
+Authentication using the default Anthropic API was completed successfully. During testing, requests could not be executed because the Anthropic Console account had no available API credits.
 
-To complete the setup, Claude Code was configured to use a locally hosted Anthropic-compatible gateway instead of the default Anthropic endpoint.
-
-The following setup work was completed:
-
-- Created the Claude Code user configuration file at `C:\Users\MSI\.claude\settings.json`.
-- Added the required environment variable names for the local gateway configuration:
-  - `ANTHROPIC_BASE_URL`
-  - `ANTHROPIC_AUTH_TOKEN`
-- Configured Claude Code to connect to a local Anthropic-compatible endpoint running on localhost.
-- Restarted Cursor so the updated configuration was loaded.
-- Verified that Claude Code connected successfully.
-- Sent a test prompt inside Cursor.
-- Confirmed that Claude Code was able to receive and return responses through the local gateway.
+To complete the setup, Claude Code was configured to use a locally hosted Anthropic-compatible gateway. Cursor was restarted so the updated configuration could load, and a test prompt confirmed that Claude Code was able to receive and return responses successfully.
 
 No authentication tokens, API keys, or sensitive configuration values are included in this repository.
 
-### Codex
+### 3. Installed Codex
 
 The Codex extension was installed successfully.
 
-At first, Codex reused configuration imported from an existing VS Code setup. That configuration pointed to a local gateway, which made the setup too similar to the Claude Code workaround.
+At first, Codex reused configuration imported from an existing VS Code setup. To make the setup use the default Codex flow, the existing configuration was backed up by renaming `config.toml` to `config.toml.bak`.
 
-To keep the Codex setup closer to the default extension flow, the existing Codex configuration was backed up by renaming `config.toml` to `config.toml.bak`. Cursor was then restarted so Codex could create a fresh default configuration.
+Cursor was restarted, Codex generated a fresh default configuration, and authentication was completed through the OpenAI login flow using Google sign-in.
 
-After the default configuration was restored:
+After authentication, the Codex sidebar was reopened and a test conversation confirmed that Codex was working normally.
 
-- Codex loaded successfully.
-- Authentication was completed through the OpenAI login flow using Google sign-in.
-- The Codex sidebar was reopened successfully.
-- A test conversation confirmed that Codex was working normally.
-
-### GitHub Repository
+### 4. Created GitHub Repository
 
 A public GitHub repository named `cursor-ai-setup` was created under the `Vann4799` account.
 
-The local project was connected to GitHub, committed, and pushed to the `main` branch.
+### 5. Opened Repository in Cursor
+
+The local repository folder was opened in Cursor and used as the working project for the setup documentation.
+
+### 6. Created README Documentation
+
+This README was created to document:
+
+- What tools were installed
+- What steps were completed
+- What issues were encountered and how they were resolved
+
+### 7. Committed and Pushed to GitHub
+
+The local repository was connected to the GitHub remote, then the README was committed and pushed to the `main` branch.
 
 ---
 
-## Troubleshooting
+## Issues Encountered and Resolutions
 
 ### Claude Code
 
-- Initial authentication succeeded.
-- Requests failed because the default Anthropic API account had no available credits.
-- A locally hosted Anthropic-compatible endpoint was configured.
-- Successful connection was verified after updating the configuration and restarting Cursor.
+**Issue:** Claude Code authentication succeeded, but requests failed because the default Anthropic API account had no available credits.
+
+**Resolution:** Claude Code was configured to use a locally hosted Anthropic-compatible gateway.
+
+The following changes were made:
+
+- Created the user configuration file at `C:\Users\MSI\.claude\settings.json`.
+- Added the required environment variable names inside the configuration:
+  - `ANTHROPIC_BASE_URL`
+  - `ANTHROPIC_AUTH_TOKEN`
+- Configured Claude Code to connect to a local Anthropic-compatible endpoint running on localhost instead of the default Anthropic endpoint.
+- Restarted Cursor so the new configuration was loaded.
+- Verified that Claude Code connected successfully.
+- Verified the integration by sending a test prompt inside Cursor.
+- Confirmed that Claude Code was able to receive and return responses successfully after the local gateway configuration.
 
 ### Codex
 
-- Codex initially reused configuration from an existing VS Code setup.
-- The imported configuration pointed to a local gateway.
-- The previous configuration was backed up by renaming `config.toml` to `config.toml.bak`.
-- Cursor was restarted so Codex could generate a fresh default configuration.
-- Authentication was completed through the OpenAI login flow using Google sign-in.
-- The Codex sidebar was reopened.
-- A test conversation confirmed that the extension worked correctly with the default setup.
+**Issue:** Codex initially reused configuration imported from an existing VS Code setup, which pointed to a local gateway.
 
-### Git
+**Resolution:** The previous Codex configuration was backed up by renaming `config.toml` to `config.toml.bak`. Cursor was restarted so Codex could generate a fresh default configuration. Authentication was then completed through the OpenAI login flow using Google sign-in.
 
-The local project initially had no GitHub remote configured.
+**Issue:** The Codex sidebar was not visible after configuration and layout changes.
 
-This was resolved by adding the repository remote, committing the documentation, and pushing the project to GitHub.
-
-### PowerShell
-
-Some command chaining syntax was not compatible with the available PowerShell environment.
-
-Commands were run separately where needed to avoid shell compatibility issues.
+**Resolution:** The workspace layout was restored, the Codex sidebar was reopened, and a test conversation confirmed that the extension worked correctly.
 
 ---
 
 ## Screenshots
 
-Screenshots will be updated to reflect the final working environment.
+The screenshots document the final working environment after setup and troubleshooting:
 
-The final screenshot set should show:
-
-- Cursor IDE
-- Claude Code connected and responding
-- Codex sidebar working
-- Repository opened in Cursor
-- GitHub repository
-- README inside Cursor
+- `screenshots/01-cursor-project-open.png` - Cursor IDE with the repository open.
+- `screenshots/02-claude-code-response.png` - Claude Code connected and responding to a test prompt.
+- `screenshots/03-codex-sidebar-working.png` - Codex sidebar open and responding to a test prompt.
+- `screenshots/04-source-control-changes.png` - Source control view showing README changes before commit.
+- `screenshots/05-readme-in-cursor.png` - README opened and edited inside Cursor.
 
 Screenshots that only show the earlier API credit limitation are not part of the final setup documentation.
 
