@@ -50,6 +50,26 @@ Committed the README and pushed it to the `main` branch on GitHub.
 
 ---
 
+## Screenshots
+
+### Cursor IDE — Project Open
+
+![Cursor IDE with repository open and extensions visible in sidebar](screenshots/01-cursor-ide.png)
+
+### Claude Code — Installed & Ready
+
+![Claude Code extension active and ready to use](screenshots/02-claude-code.png)
+
+### Codex — Custom Gateway Configuration
+
+![Codex config.toml with local AI gateway and MCP servers configured](screenshots/03-codex-config.png)
+
+### Codex & Claude Code — Both Extensions Running
+
+![Codex and Claude Code extensions running side by side in Cursor](screenshots/04-codex-claude-code.png)
+
+---
+
 ## Issues Encountered
 
 ### Claude Code — API Credits
