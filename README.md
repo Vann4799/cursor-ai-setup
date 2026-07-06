@@ -122,7 +122,21 @@ The screenshots document the final working environment after setup and troublesh
 
 ![README opened and edited inside Cursor](screenshots/05-readme-in-cursor.png)
 
-Screenshots that only show the earlier API credit limitation are not part of the final setup documentation.
+## Troubleshooting Evidence
+
+These screenshots document the issues found during setup and the configuration changes used to resolve them.
+
+### Claude Code API Credit Limitation
+
+![Claude Code showing the initial API credit limitation](screenshots/07-claude-credit-limitation.png)
+
+### Codex Imported Configuration
+
+![Codex showing the imported configuration before restoring the default setup](screenshots/06-codex-imported-config.png)
+
+### Codex Configuration Backup
+
+![Codex configuration backup showing config.toml and config.toml.bak](screenshots/08-codex-config-backup.png)
 
 ---
 
